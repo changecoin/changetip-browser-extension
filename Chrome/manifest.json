@@ -1,0 +1,38 @@
+{
+	"name": "ChangeTip Extension",
+	"version": "0.0.1",
+	"manifest_version": 2,
+	"description": "ChangeTip - lorem ipsum dolor sit amet",
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*/*" // TODO: reduce to specific sites? Discuss permissions issues w/this.
+			],
+			"js": [
+				"BabelExt.js",
+				"vendor/zepto.min.js",
+				"core.js",
+				"sites/reddit.js",
+				"extension.js"
+			],
+			"css": [
+				"changetip.css"
+			]
+		}
+	],
+	"web_accessible_resources": [
+		"images/*.png"
+	],
+	"icons": {
+		"48": "images/logo-48.png",
+		"128": "images/logo-128.png" 
+	},
+	"permissions": [
+		"tabs",
+		"contextMenus", // possible future use? we can remove this permission if not
+		"notifications" // possible future use? we can remove this permission if not
+	]
+}

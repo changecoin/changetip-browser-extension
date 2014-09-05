@@ -1,0 +1,6 @@
+# until we add these browsers, ignore...
+/Firefox/*
+/Opera/*
+/OperaBlink/*
+/Safari.safariextension/*
+/psd/*
