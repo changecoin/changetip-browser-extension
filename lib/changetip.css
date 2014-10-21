@@ -91,7 +91,7 @@
 	width: 100%;
 }
 #changeTipDialog-body #changeTipDialog-monikerQty {
-	width: 2em;
+	width: 48px;
 }
 
 #changeTipDialog-body input[type="text"], #changeTipDialog-body select {
@@ -101,8 +101,9 @@
 	height: 30px;
 }
 #changeTipDialog-body select {
-	margin-right: 5px;
-	margin-left: 5px;
+	width: 284px;
+	margin-right: 0;
+	margin-left: 4px;
 }
 #changeTipDialog-body input[type="submit"], #changeTipDialog-body button {
 	background-color: #005197;
