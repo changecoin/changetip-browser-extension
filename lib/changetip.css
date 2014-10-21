@@ -87,23 +87,37 @@
 #changeTipDialog-body label,
 #changeTipDialog-body input[type="text"] {
 	box-sizing: border-box;
+	margin-top: 6px;
 	width: 100%;
 }
+#changeTipDialog-body #changeTipDialog-monikerQty {
+	width: 2em;
+}
 
-#changeTipDialog-body input[type="text"] {
-	margin-top: 6px;
+#changeTipDialog-body input[type="text"], #changeTipDialog-body select {
 	border: 1px solid #ddd;
+	border-radius: 0;
 	font-size: 24px;
 	height: 30px;
 }
-#changeTipDialog-body input[type="submit"] {
-	margin-top: 10px;
+#changeTipDialog-body select {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+#changeTipDialog-body input[type="submit"], #changeTipDialog-body button {
 	background-color: #005197;
 	color: #fff;
 	font-size: 16px;
-	float: right;
 	border: 1px solid #aaa;
 	padding: 4px;
+}
+#changeTipDialog-body button {
+	vertical-align: bottom;
+	height: 30px;
+}
+#changeTipDialog-body input[type="submit"] {
+	float: right;
+	margin-top: 10px;
 }
 #changeTipDialog-toUsername {
 	float: left;
