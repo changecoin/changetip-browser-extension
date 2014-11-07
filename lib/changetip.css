@@ -85,7 +85,7 @@
 }
 
 #changeTipDialog-body label,
-#changeTipDialog-body input[type="text"] {
+#changeTipDialog-body .changeTip-amount input {
 	box-sizing: border-box;
 	margin-top: 6px;
 	width: 100%;
@@ -93,8 +93,20 @@
 #changeTipDialog-body #changeTipDialog-monikerQty {
 	width: 48px;
 }
+#changeTipDialog-body .changeTip-amount-dropdown {
+	background-color: #fff;
+	font-size: 24px;
+}
+#changeTipDialog-body .changeTip-amount-hint {
+	color: #aaa;
+}
 
-#changeTipDialog-body input[type="text"], #changeTipDialog-body select {
+#changeTipDialog-body #changeTip-fiatPreview {
+	float: right;
+	color: #aaa;
+}
+
+#changeTipDialog-body .changeTip-amount input, #changeTipDialog-body select {
 	border: 1px solid #ddd;
 	border-radius: 0;
 	font-size: 24px;
@@ -105,7 +117,7 @@
 	margin-right: 0;
 	margin-left: 4px;
 }
-#changeTipDialog-body input[type="submit"], #changeTipDialog-body button {
+#changeTipDialog-body .changetip-submit, #changeTipDialog-body button {
 	background-color: #005197;
 	color: #fff;
 	font-size: 16px;
@@ -116,7 +128,7 @@
 	vertical-align: bottom;
 	height: 30px;
 }
-#changeTipDialog-body input[type="submit"] {
+#changeTipDialog-body .changetip-submit {
 	float: right;
 	margin-top: 10px;
 }
@@ -127,4 +139,10 @@
 }
 .changetip-clear {
 	clear: both;
+}
+
+/* twitter styles */
+.js-actionChangeTip {
+	width: 16px;
+	height: 18px;
 }
