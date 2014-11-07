@@ -12,11 +12,15 @@
             "matches": [
                 "*://*/*"
             ],
+            "all_frames": true,
             "js": [
                 "BabelExt.js",
                 "vendor/zepto.min.js",
+                "vendor/complete.ly.1.0.1.js",
                 "core.js",
                 "sites/reddit.js",
+                "sites/twitter.js",
+                // "sites/youtube.js",
                 "extension.js"
             ],
             "css": [
