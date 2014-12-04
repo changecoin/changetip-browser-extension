@@ -2,7 +2,7 @@
 
 For ChangeTip Power Users, this extension makes it easier to leave bitcoin tips on your favorite sites. 
 
-Currently we have added functionality for Reddit, others coming soon.
+Currently we have added functionality for Reddit and Twitter - others coming soon.
 
 ## Requirements
 A ChangeTip account - https://www.changetip.com/
