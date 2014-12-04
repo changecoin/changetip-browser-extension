@@ -14,3 +14,7 @@ A ChangeTip account - https://www.changetip.com/
 
 ## Support
 Please [file an issue](/changecoin/changetip-browser-extension/issues)
+
+
+## License
+See [LICENSE](LICENCE)
