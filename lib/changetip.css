@@ -11,15 +11,14 @@
 	background-color: #fff;
 	box-shadow: 2px 2px 5px #888;
 	border: 0px solid transparent;
-	border-radius: 5px 5px;
 	top: 0; /* to be set programmatically on open() */
 	left: 0; /* to be set programmatically on open() */
-	width: 350px;
+	width: 340px;
 	height: auto;
-	color: #000;
+	color: #a4a4a4;
 	font-size: 14px;
 	font-weight: normal;
-	font-family: 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+	font-family: 'Tahoma', 'Verdana', 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 	transition: opacity 0.1s linear, visibility 0.2s;
 }
 #changeTipDialog.ct-visible {
@@ -29,23 +28,25 @@
 	transition: opacity 0.3s linear, visibility 0.4s;
 }
 #changeTipDialog-closeButton {
+	font-size: 13px;
+	margin-right: 5px;
+	margin-top: 3px;
 	float: right;
 	cursor: pointer;
 }
 #changeTipDialog-header {
 	border: 0px solid transparent;
 	box-sizing: border-box;
-	border-radius: 5px 5px 0 0;
 	width: 100%;
-	height: 40px;
+	height: 38px;
 	border: 1px solid #395c82;
 	/* 
 		must be set programmatically via Chrome Extension API
 		background-image: url('images/changetip_round_icon.png'); 
 	*/
 	background-repeat: no-repeat;
-	background-size: 30px;
-	background-position: 4px 4px;
+	background-size: 95px 22px;
+	background-position: 4px 8px;
 	text-indent: 35px;
 	background-color: #005197;
 	color: #ddd;
@@ -57,38 +58,34 @@
 	box-sizing: border-box;
 	width: 100%;
 	height: 100%;
-	padding: 7px 7px 15px 7px;
+	padding: 0;
 }
 #changeTipDialog-amount-help {
-	opacity: 0.5;
 	display: inline-block;
 	margin-left: 6px;
-	width: 20px;
-	height: 20px;
-	font-size: 13px;
-	font-weight: normal;
-	text-decoration: none;
-	line-height: 21px;
-	border-radius: 12px;
-	background-color: #005197;
-	color: #ccc;
-	text-align: center;
-	font-size: 15px;
-	-webkit-transition: opacity 0.3s;
-}
-#changeTipDialog-amount-help:hover {
-	opacity: 1;
-	-webkit-transition: opacity 0.3s;
+	margin-bottom: 1px;
+	vertical-align: middle;
+	width: 17px;
+	height: 17px;
 }
 #changeTipDialog-amount-help:after {
 	clear: right;
 }
 
-#changeTipDialog-body label,
+#changeTipDialog-body label {
+	box-sizing: border-box;
+	width: 210px;
+	height: 30px;
+}
+
+#changeTipDialog-body .changeTip-amount {
+	float: left;
+}
 #changeTipDialog-body .changeTip-amount input {
 	box-sizing: border-box;
-	margin-top: 6px;
-	width: 100%;
+	width: 210px;
+	height: 30px;
+	border: 1px solid #ededed;
 }
 #changeTipDialog-body #changeTipDialog-monikerQty {
 	width: 48px;
@@ -107,6 +104,7 @@
 }
 
 #changeTipDialog-body .changeTip-amount input, #changeTipDialog-body select {
+	margin-top: 10px;
 	border: 1px solid #ddd;
 	border-radius: 0;
 	font-size: 24px;
@@ -117,26 +115,42 @@
 	margin-right: 0;
 	margin-left: 4px;
 }
-#changeTipDialog-body .changetip-submit, #changeTipDialog-body button {
-	background-color: #005197;
+/* 
+ * Note: See core.js for styling of this button as well, explanation therein.
+ */
+#changeTipDialog-body .changetip-submit {
+	box-sizing: border-box;
+	font-family: 'Tahoma', 'Verdana', 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+	padding-bottom: 1px;
+	margin-top: 10px;
+	padding-left: 22px;
 	color: #fff;
 	font-size: 16px;
-	border: 1px solid #aaa;
-	padding: 4px;
-}
-#changeTipDialog-body button {
-	vertical-align: bottom;
+	border-radius: 3px;
+	width: 64px;
 	height: 30px;
-}
-#changeTipDialog-body .changetip-submit {
 	float: right;
-	margin-top: 10px;
+}
+#changeTipDialog-toUserContainer {
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 16px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 #changeTipDialog-toUsername {
-	float: left;
-	margin-top: 15px;
-	color: #888;
+	font-size: 18px;
+	color: #005197;
 }
+#changeTipDialog form {
+	border-top: 1px solid #f3f3f3;
+	background-color: #f7f7f7;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+
 .changetip-clear {
 	clear: both;
 }
