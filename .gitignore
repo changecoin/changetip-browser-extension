@@ -1,4 +1,5 @@
 # until we add these browsers, ignore...
+.idea/*
 /Firefox/*
 /Opera/*
 /OperaBlink/*
