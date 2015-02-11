@@ -28,7 +28,8 @@
         }
     ],
     "web_accessible_resources": [
-        "images/*.png"
+        "images/*",
+        "fonts/*"
     ],
     "icons": {
         "48": "images/logo-48.png",
