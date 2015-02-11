@@ -18,7 +18,7 @@
 	color: #a4a4a4;
 	font-size: 14px;
 	font-weight: normal;
-	font-family: 'Tahoma', 'Verdana', 'Lato', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+	font-family: 'Lato', 'Tahoma', 'Verdana', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 	transition: opacity 0.1s linear, visibility 0.2s;
 }
 #changeTipDialog.ct-visible {
@@ -95,7 +95,7 @@
 	font-size: 24px;
 }
 #changeTipDialog-body .changeTip-amount-hint {
-	color: #aaa;
+	display: none; /* hiding the hint for now due to scroll issues */
 }
 
 #changeTipDialog-body #changeTip-fiatPreview {
@@ -149,6 +149,27 @@
 	padding-right: 25px;
 	padding-top: 18px;
 	padding-bottom: 18px;
+}
+.changetip-enabled {
+	position: relative;
+}
+.changetip-textarea-button {
+	font-family: 'Harabara';	
+	font-size: 12px;
+	opacity: 0.5;
+	background-color: transparent;
+	/* background image set via javascript */
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	padding-left: 15px;
+	color: #ccc;
+	position: absolute;
+	left: 5px;
+	bottom: 15px;
+}
+.changetip-textarea-button:hover {
+	text-decoration: none;
+	color: #005197;
 }
 
 .changetip-clear {
