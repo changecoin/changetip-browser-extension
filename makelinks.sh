@@ -3,8 +3,9 @@
 libfiles=("lib/"*)
 vendorfiles=("lib/vendor/"*)
 imagesfiles=("lib/images/"*)
+fontsfiles=("lib/fonts/"*)
 sitesfiles=("lib/sites/"*)
-files=("${libfiles[@]}" "${vendorfiles[@]}" "${imagesfiles[@]}" "${sitesfiles[@]}")
+files=("${libfiles[@]}" "${vendorfiles[@]}" "${imagesfiles[@]}" "${fontsfiles[@]}" "${sitesfiles[@]}")
 
 paths=("Chrome" "Firefox/data" "Opera" "OperaBlink" "Safari.safariextension")
 
@@ -26,6 +27,9 @@ do
 			elif [ "$dir" == "lib/images" ]
 			then
 				dest="./$j/images/"
+			elif [ "$dir" == "lib/fonts" ]
+			then
+				dest="./$j/fonts/"
 			else
 				dest="./$j/"
 			fi
