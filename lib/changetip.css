@@ -168,6 +168,7 @@
 	bottom: 15px;
 }
 .changetip-textarea-button:hover {
+	opacity: 1;
 	text-decoration: none;
 	color: #005197;
 }
