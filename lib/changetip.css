@@ -164,8 +164,12 @@
 	padding-left: 15px;
 	color: #ccc;
 	position: absolute;
+	/* 
+	 * these are just good starting points for position, but we'll sometimes 
+	 * have to do javascript magic in case the textarea has margin.
+	 */
 	left: 5px;
-	bottom: 15px;
+	bottom: 5px;
 }
 .changetip-textarea-button:hover {
 	opacity: 1;
