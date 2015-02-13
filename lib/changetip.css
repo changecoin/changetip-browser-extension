@@ -16,7 +16,7 @@
 	width: 340px;
 	height: auto;
 	color: #a4a4a4;
-	font-size: 14px;
+	font-size: 13px;
 	font-weight: normal;
 	font-family: 'Lato', 'Tahoma', 'Verdana', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 	transition: opacity 0.1s linear, visibility 0.2s;
@@ -131,6 +131,18 @@
 	height: 30px;
 	float: right;
 }
+#changeTipDialog-avatar {
+	display: none;
+	width: 64px;
+	height: 64px;
+	margin-left: 25px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	float: left;
+}
+#changeTipDialog.has-avatar #changeTipDialog-avatar {
+	display: inline-block;
+}
 #changeTipDialog-toUserContainer {
 	display: block;
 	margin-top: 20px;
@@ -138,9 +150,18 @@
 	padding-left: 25px;
 	padding-right: 25px;
 }
+#changeTipDialog.has-avatar #changeTipDialog-toUserContainer {
+	padding-top: 10px;
+}
 #changeTipDialog-toUsername {
-	font-size: 18px;
+	margin-left: 3px;
+	font-size: 20px;
 	color: #005197;
+}
+#changeTipDialog.has-avatar #changeTipDialog-toUsername {
+	display: inline-block;
+	margin-left: 0;
+	margin-top: 4px;
 }
 #changeTipDialog form {
 	border-top: 1px solid #f3f3f3;
@@ -177,6 +198,17 @@
  */
 .changetip-textarea-button.twitter {
 	bottom: 2px;
+}
+/* 
+ * end twitter specific styles
+ */
+
+/* 
+ * begin youtube specific styles
+ */
+.changetip-textarea-button.youtube {
+	bottom: 0;
+	left: 0;
 }
 /* 
  * end twitter specific styles
