@@ -20,6 +20,7 @@
                 "core.js",
                 "sites/reddit.js",
                 "sites/twitter.js",
+                "sites/youtube.js",
                 "extension.js"
             ],
             "css": [
