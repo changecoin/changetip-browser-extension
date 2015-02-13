@@ -171,6 +171,18 @@
 	left: 5px;
 	bottom: 5px;
 }
+
+/* 
+ * begin twitter specific styles
+ */
+.changetip-textarea-button.twitter {
+	bottom: 2px;
+}
+/* 
+ * end twitter specific styles
+ */
+
+
 .changetip-textarea-button:hover {
 	opacity: 1;
 	text-decoration: none;
