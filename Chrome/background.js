@@ -81,8 +81,28 @@ chrome.runtime.onMessage.addListener(
 				}
 				chrome.contextMenus.create(request.obj);
 				break;
+			case 'requestUserInfo':
+				chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+					chrome.tabs.sendMessage(tabs[0].id, {status: true, requestType: 'requestUserInfo'}, function(response) {
+						// noop
+					});
+				});
+				break;
+			case 'returnUserInfo':
+				chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+					chrome.tabs.sendMessage(tabs[0].id, {
+					status: true,
+					requestType: 'returnUserInfo',
+					mainUsername: request.mainUsername,
+					mainAvatar: request.mainAvatar,
+					mainOid: request.mainOid
+				}, function(response) {
+						// noop
+					});
+				});
+				break;
 			default:
-				sendResponse({status: "unrecognized request type"});
+				sendResponse({status: "unrecognized request type: " + request.requestType});
 				break;
 		}
 	}
