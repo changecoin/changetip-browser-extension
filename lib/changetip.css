@@ -1,3 +1,7 @@
+iframe#changeTipDialog {
+	width: 340px;
+	height: 207px;
+}
 #changeTipDialog, #changeTipDialog * {
 	margin: 0;
 	padding: 0;
@@ -249,4 +253,38 @@ a.changetip-button.changetip-inline-button {
 .changetip-huddler-icon {
 	background-repeat: no-repeat;
 	padding-left: 22px;
+}
+
+/*
+ * tipme-styled button
+ */
+.changetip-tipme-button, .changetip-tipme-button:visited {
+	line-height: 16px;
+	height: 14px;
+	text-decoration: none;
+	display: inline-block;
+	letter-spacing: 1px;
+	text-align: center;
+	font-size: 12px;
+	font-family: "Source Sans Pro",sans-serif;
+	font-weight: 300 !important;
+	margin: 0 auto;
+	position: relative;
+	padding: 4px 4px 4px 22px;
+	border-radius: 3px;
+	background: #005197;
+	color: #FFFFFF !important;
+	overflow: hidden;
+	transition: all .5s;
+	display: inline-block;
+	margin-left: 5px;
+	vertical-align: middle;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.changetip-tipme-button:focus, .changetip-tipme-button:hover {
+	text-decoration: none;
+	background: #237BC8;
+	color: #FFFFFF;
 }
