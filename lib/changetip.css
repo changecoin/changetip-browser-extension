@@ -1,3 +1,7 @@
+iframe#changeTipDialog {
+	width: 340px;
+	height: 207px;
+}
 #changeTipDialog, #changeTipDialog * {
 	margin: 0;
 	padding: 0;
@@ -195,12 +199,25 @@ a.changetip-button.changetip-textarea-button {
 	bottom: 5px;
 	transition: opacity 0.3s;
 }
-
-a.changetip-button.changetip-textarea-button:hover {
+a.changetip-button.changetip-textarea-button:hover, a.changetip-button.changetip-inline-button:hover {
 	opacity: 1;
 	text-decoration: none;
 	color: #005197;
 	transition: opacity 0.5s;
+}
+
+a.changetip-button.changetip-inline-button {
+	margin-left: 5px;
+	font-family: 'Harabara' !important;
+	font-size: 12px !important;
+	line-height: normal !important;
+	opacity: 1;
+	background-color: transparent;
+	/* background image set via javascript */
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	padding-left: 15px;
+	color: #ccc;
 }
 
 .changetip-clear {
@@ -208,23 +225,66 @@ a.changetip-button.changetip-textarea-button:hover {
 }
 
 
-/* 
+/*
  * begin twitter specific styles
  */
 .changetip-textarea-button.twitter {
 	bottom: 2px;
 }
-/* 
+/*
  * end twitter specific styles
  */
 
-/* 
+/*
  * begin youtube specific styles
  */
 .changetip-textarea-button.youtube {
 	bottom: 0;
 	left: 0;
 }
-/* 
+/*
  * end twitter specific styles
  */
+
+
+/*
+ * huddler specific styles
+ */
+.changetip-huddler-icon {
+	background-repeat: no-repeat;
+	padding-left: 22px;
+}
+
+/*
+ * tipme-styled button
+ */
+.changetip-tipme-button, .changetip-tipme-button:visited {
+	line-height: 16px;
+	height: 14px;
+	text-decoration: none;
+	display: inline-block;
+	letter-spacing: 1px;
+	text-align: center;
+	font-size: 12px;
+	font-family: "Source Sans Pro",sans-serif;
+	font-weight: 300 !important;
+	margin: 0 auto;
+	position: relative;
+	padding: 4px 4px 4px 22px;
+	border-radius: 3px;
+	background: #005197;
+	color: #FFFFFF !important;
+	overflow: hidden;
+	transition: all .5s;
+	display: inline-block;
+	margin-left: 5px;
+	vertical-align: middle;
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.changetip-tipme-button:focus, .changetip-tipme-button:hover {
+	text-decoration: none;
+	background: #237BC8;
+	color: #FFFFFF;
+}
