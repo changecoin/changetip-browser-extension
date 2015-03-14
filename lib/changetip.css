@@ -1,19 +1,29 @@
-iframe#changeTipDialog {
+#changeTipDialogFrame {
+	position: absolute;
+	z-index: 999999;
+	border: 0px solid transparent;
+	opacity: 0;
+	visibility: hidden;
 	width: 340px;
 	height: 207px;
+ 	overflow: hidden;
+	box-shadow: 2px 2px 5px #888;
+	transition: opacity 0.1s linear, visibility 0.2s;
+ }
+#changeTipDialogFrame.ct-visible {
+	visibility: visible;
+	display: block;
+	opacity: 1;
+	transition: opacity 0.3s linear, visibility 0.4s;
 }
 #changeTipDialog, #changeTipDialog * {
 	margin: 0;
 	padding: 0;
 	border: 0;
+ 	overflow: hidden;
 }
 #changeTipDialog {
-	visibility: hidden;
-	opacity: 0;
-	position: absolute;
-	z-index: 999999;
 	background-color: #fff;
-	box-shadow: 2px 2px 5px #888;
 	border: 0px solid transparent;
 	top: 0; /* to be set programmatically on open() */
 	left: 0; /* to be set programmatically on open() */
@@ -23,13 +33,6 @@ iframe#changeTipDialog {
 	font-size: 13px;
 	font-weight: normal;
 	font-family: 'Lato', 'Tahoma', 'Verdana', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
-	transition: opacity 0.1s linear, visibility 0.2s;
-}
-#changeTipDialog.ct-visible {
-	visibility: visible;
-	display: block;
-	opacity: 1;
-	transition: opacity 0.3s linear, visibility 0.4s;
 }
 #changeTipDialog-closeButton {
 	font-size: 13px;
